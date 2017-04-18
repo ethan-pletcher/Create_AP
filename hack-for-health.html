@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+          <title>Hack for Health</title>
+          <!-- Bootstrap -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+          <!-- JQuery -->
+          <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+          <!-- Plotly -->
+          <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+          <!-- Google Maps -->
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVsQf1ePPFON6EVu7Q-GMPuAthNXyDqH8&callback=initMap" async defer></script>
+          <script src="hack-for-health.js"></script>
+          <link rel="stylesheet" href="hack-for-health.css"> </head>
+
+<body>
+          <div class="thermometer" data-percent="75">
+                    <div class="thermometer-outer">
+                              <div class="thermometer-inner"></div>
+                    </div>
+          </div>
+          <p id="info-paragraph"></p>'
+          <div id="inputBox">
+                    <div id="dataInput">
+                              <h2>Input Date Range</h2>
+                              <h4>From:</h4>
+                              <div id="startBox">
+                                        <input class="input" type="text" placeholder=" Month" id="starting-month-input"></input>
+                                        <input class="input" type="text" placeholder=" Day" id="starting-day-input"></input>
+                                        <input class="input" type="text" placeholder=" Year" id="starting-year-input"></input>
+                              </div>
+                              <h4>To:</h4>
+                              <div id="endBox">
+                                        <input class="input" type="text" placeholder=" Month" id="ending-month-input"></input>
+                                        <input class="input" type="text" placeholder=" Day" id="ending-day-input"></input>
+                                        <input class="input" type="text" placeholder=" Year" id="ending-year-input"></input>
+                              </div>
+                    </div>
+                    <div id="zipcodeFilterBox">
+                              <h2>Filter By Zipcode</h2>
+                              <div class="onoffswitch">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                                        <label class="onoffswitch-label" for="myonoffswitch"> <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span> </label>
+                              </div>
+                              <br>
+                              <div id="zipBoxHidden">
+                                        <h2>Zipcode:</h2>
+                                        <input type="text" class="input" placeholder=" 94901" id="zipcode-input"></input>
+                              </div>
+                    </div>
+                    <div id="submitBox">
+                              <button class="button" onclick="submitButtonPressed()">Submit</button>
+                    </div>
+          </div>
+          <div id="pie-charts">
+                    <div class="pie-charts1">
+                              <div class="pieCharts" id="protocol-div"></div>
+                              <div class="pieCharts" id="disposition-div"></div>
+                    </div>
+                    <div class="pie-charts1">
+                              <div class="pieCharts" id="where-patient-was-transported-div"></div>
+                              <div class="pieCharts" id="gender-div"></div>
+                    </div>
+                    <div class="pie-charts1">
+                              <div class="plotly-div" id="primary-injury-div"></div>
+                    </div>
+          </div>
+          <div id="incident-map"></div>
+</body>
+
+</html>

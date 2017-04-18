@@ -1,0 +1,307 @@
+html,
+body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+}
+
+#incident-map {
+          top: 0;
+          left: 0;
+          margin: 0px;
+          padding: 0px;
+          z-index: 0;
+          width: 100%;
+          height: 175%;
+          position: absolute;
+}
+
+.thermometer-outer {
+          background: #c4f0ff;
+          border: 1px solid #c4c4c4;
+          border-radius: 3px;
+          height: 20px;
+          width: 100%;
+          z-index: 0;
+}
+
+.thermometer-inner {
+          background: #3f83f7;
+          height: 20px;
+          z-index: 0;
+}
+
+#inputBox {
+          position: absolute;
+          padding-top: 2%;
+          height: 140%;
+          width: 25%;
+          float: right;
+          border-bottom-left-radius: 30px;
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-top-right-radius: 30px;
+          text-align: center;
+          top: 5%;
+          right: 2%;
+          z-index: 1;
+          background-color: rgba(0, 255, 0, .5);
+}
+
+#dataInput {
+          position: relative;
+          height: 50%;
+          width: 90%;
+          top: 1%;
+          border-bottom-left-radius: 30px;
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-top-right-radius: 30px;
+          padding: 2%;
+          text-align: center;
+          display: inline-block;
+          z-index: 1;
+          background-color: rgba(255, 255, 255, .5);
+}
+
+#startBox {
+          position: relative;
+          padding-top: 5%;
+          height: 32%;
+          width: 70%;
+          border-bottom-left-radius: 30px;
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-top-right-radius: 30px;
+          text-align: center;
+          display: inline-block;
+          z-index: 1;
+          background-color: rgba(255, 255, 0, .5);
+          margin-bottom: 4%;
+}
+
+#endBox {
+          position: relative;
+          padding-top: 5%;
+          height: 32%;
+          width: 70%;
+          border-bottom-left-radius: 30px;
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-top-right-radius: 30px;
+          text-align: center;
+          display: inline-block;
+          z-index: 1;
+          background-color: rgba(255, 255, 0, .5);
+          margin-bottom: 4%;
+}
+
+#zipcodeFilterBox {
+          top: 5%;
+          position: relative;
+          padding-top: 0%;
+          height: 28%;
+          width: 90%;
+          border-bottom-left-radius: 30px;
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-top-right-radius: 30px;
+          text-align: center;
+          display: inline-block;
+          z-index: 1;
+          background-color: rgba(255, 255, 225, .5);
+          margin-bottom: 4%
+}
+
+#zipBoxHidden {
+          top: 5%;
+          position: relative;
+          padding-top: 0%;
+          height: 50%;
+          width: 70%;
+          border-bottom-left-radius: 30px;
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-top-right-radius: 30px;
+          text-align: center;
+          display: inline-block;
+          z-index: 1;
+          background-color: rgba(255, 255, 0, .5);
+          margin-bottom: 4%
+}
+
+#submitBox {
+          vertical-align: middle;
+          top: 7%;
+          position: relative;
+          padding-top: 10%;
+          height: 12%;
+          width: 90%;
+          border-bottom-left-radius: 30px;
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-top-right-radius: 30px;
+          text-align: center;
+          display: inline-block;
+          z-index: 1;
+          background-color: rgba(255, 255, 225, .5);
+          margin-bottom: 4%;
+}
+
+.pieCharts {
+          height: 50%;
+          width: 100%;
+}
+
+.input {
+          font-family: "Lucida Console", Monaco, monospace;
+          font-size: 100%;
+          text-align: center;
+          margin: 4%;
+          width: 70%;
+          display: inline-block;
+          border-width: 0px;
+          background-color: rgba(255, 255, 255, .8);
+          border-radius: 4px;
+}
+
+#zipcode-input {
+          margin: 4%;
+          width: 60%;
+          display: inline-block;
+          border-width: 0%;
+}
+
+#info-paragraph {
+          font-family: "Lucida Console", Monaco, monospace;
+          font-size: 200%;
+          position: absolute;
+          float: left;
+          top: 74%;
+          left: 2%;
+          height: 20%;
+          width: 30%;
+          border-bottom-left-radius: 30px;
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-top-right-radius: 30px;
+          text-align: center;
+          z-index: 1;
+          background-color: rgba(0, 255, 0, .5);
+}
+
+#pie-charts {
+          position: absolute;
+          float: left;
+          top: 100%;
+          left: 2%;
+          height: 70%;
+          width: 68%;
+          padding-top: 0%;
+          border-bottom-left-radius: 30px;
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-top-right-radius: 30px;
+          text-align: center;
+          display: inline-block;
+          z-index: 1;
+          background-color: rgba(0, 255, 0, .5);
+}
+
+.pie-charts1 {
+          position: relative;
+          height: 80%;
+          width: 31%;
+          border-bottom-left-radius: 30px;
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-top-right-radius: 30px;
+          text-align: center;
+          display: inline-block;
+          z-index: 1;
+          background-color: rgba(255, 255, 255, 0);
+}
+
+
+/* -------------------------------on/off Button---------------------------*/
+
+.onoffswitch {
+          position: relative;
+          display: inline-block;
+          width: 80px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+          display: none;
+}
+
+.onoffswitch-label {
+          display: block;
+          overflow: hidden;
+          cursor: pointer;
+          border: 2px solid #999999;
+          border-radius: 16px;
+}
+
+.onoffswitch-inner {
+          display: block;
+          width: 200%;
+          margin-left: -100%;
+          transition: margin 0.2s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+          display: block;
+          float: left;
+          width: 50%;
+          height: 24px;
+          padding: 0px;
+          line-height: 27px;
+          font-size: 16px;
+          color: white;
+          font-family: Trebuchet, Arial, sans-serif;
+          font-weight: bold;
+          box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+          content: "ON";
+          padding-left: 10px;
+          background-color: mediumseagreen;
+          color: #FFFFFF;
+          text-align: left;
+}
+
+.onoffswitch-inner:after {
+          content: "OFF";
+          padding-right: 10px;
+          background-color: #9E9E9E;
+          color: #FFFFFF;
+          text-align: right;
+}
+
+.onoffswitch-switch {
+          display: block;
+          width: 20px;
+          margin: 4.5px;
+          background: #FFFFFF;
+          position: absolute;
+          top: 0;
+          bottom: 4.2px;
+          right: 46px;
+          border: 2px solid #999999;
+          border-radius: 16px;
+          transition: all 0.2s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+          margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+          right: 0px;
+}
