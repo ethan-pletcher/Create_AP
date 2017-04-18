@@ -16,19 +16,19 @@ body {
           position: absolute;
 }
 
-.thermometer-outer {
-          background: #c4f0ff;
-          border: 1px solid #c4c4c4;
-          border-radius: 3px;
-          height: 20px;
-          width: 100%;
-          z-index: 0;
-}
-
-.thermometer-inner {
-          background: #3f83f7;
-          height: 20px;
-          z-index: 0;
+#Pulse {
+          font-family: "Courier New", Courier, monospace;
+          padding-top: 0px;
+          position: absolute;
+          float: left;
+          top: 2%;
+          left: 2%;
+          height: 15%;
+          width: 25%;
+          text-align: center;
+          font-size: 800%;
+          z-index: 1;
+          background-color: rgba(255, 255, 255, .5);
 }
 
 #inputBox {

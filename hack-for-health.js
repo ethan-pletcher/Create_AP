@@ -53,7 +53,7 @@ function onDataFetched(data) {
           drawZipcodes(map, data);
           drawBarChart("primary-injury-div", "Primary Injury", countInstances(extractColumn(data, "injury_primary")));
           drawPieChart("disposition-div", "Patient Disposition", countInstances(extractColumn(data, "disposition")));
-          drawPieChart("protocol-div", "EMS Protocol", countInstances(extractColumn(data, "disposition")));
+          drawPieChart("protocol-div", "EMS Protocol", countInstances(extractColumn(data, "protocol_used")));
           drawPieChart("where-patient-was-transported-div", "Hospital", countInstances(extractColumn(data, "transported_to_destination")));
           drawPieChart("gender-div", "Gender", countInstances(extractColumn(data, "gender")));
 }
